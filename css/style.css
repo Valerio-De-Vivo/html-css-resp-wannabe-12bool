@@ -32,6 +32,19 @@ section:nth-child(2) {
   padding: 10px;
 }
 
+nav{
+  width: 5%;
+  position: fixed;
+  top:50%;
+  right: 0;
+  transform: translateY(-50%);
+  text-align: right;
+}
+
+nav a {
+  color: orange;
+}
+
 /* PRIMA SECTION */
 
 .lezioni{
@@ -46,6 +59,13 @@ section:nth-child(2) {
   border-radius: 20px;
   color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation: heartBeat;
+  animation-duration: 2s;
+}
+
+img{
+  animation: backInLeft;
+  animation-duration: 2s;
 }
 
 .testata:hover{
@@ -84,5 +104,10 @@ section:nth-child(2) {
   .info,
   .perche{
     padding: 30px 0;
+  }
+
+  section:first-child,
+  section:nth-child(2) {
+    height: 100%;
   }
 }
