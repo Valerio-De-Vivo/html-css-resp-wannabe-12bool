@@ -10,36 +10,80 @@ h2{
 
 h3{
   font-size: 25px;
+  margin: 10px 0;
 }
 
 p{
-  line-height: 1.6;
+  line-height: 1.9;
+}
+
+section:first-child,
+section:nth-child(2) {
+  height: 100vh;
 }
 
 .container{
   max-width: 1200px;
   margin: auto;
+  text-align: center;
 }
 
 [class*="col-"] {
   padding: 10px;
 }
 
+/* PRIMA SECTION */
+
 .lezioni{
   background-color: #F2F2F3;
-  padding: 30px;
-  text-align: center;
+  padding: 120px 0;
 }
 
 .testata{
   padding: 30px 0;
-  margin: 20px 0;
+  margin: 50px 0;
   background-color: #219EBC;
   border-radius: 20px;
   color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.lezioni img{
-  width: 30%;
+.testata:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+}
+
+.lezioni img,
+.info img {
+  width: 40%;
+}
+
+/* SECONDA SECTION */
+
+.info{
+  background-color: #F7F5F4;
+  padding: 120px 0;
+}
+
+/* TERZA SECTION */
+
+.perche{
+  background-color: #F2F2F3;
+  padding: 120px 0;
+}
+
+.perche [class*="col-"] {
+  border-bottom: 2px solid orange;
+}
+
+.perche [class*="col-"]:first-child {
+  border-bottom: none;
+}
+
+
+@media screen and (max-width:768px) {
+  .lezioni,
+  .info,
+  .perche{
+    padding: 30px 0;
+  }
 }
